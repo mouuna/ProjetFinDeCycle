@@ -1,0 +1,180 @@
+:root {
+  --couleur-darkgreen: #4d7368;
+  --couleur-lightcyan: #d9e5e1;
+  --couleur-darkblue: #000038;
+  --couleur-green: #8fbf78;
+  --couleur-white: white;
+  --couleur-black: black;
+
+  --fontfamily-poppins: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+
+  font-family: var(--fontfamily-poppins);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--couleur-lightcyan);
+  transition: all 200ms ease-in-out;
+}
+.flex {
+  display: flex;
+}
+.btn {
+  padding: 0.4em 0.8em;
+  background-color: var(--couleur-green);
+  border-radius: 20px;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+}
+.inp {
+  height: 36.6px;
+  width: 200px;
+  border: none;
+  padding: 0 1em;
+  font-family: var(--fontfamily-poppins);
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--couleur-lightcyan);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 90vh;
+}
+
+header {
+  padding: 2rem 5rem;
+  justify-content: space-between;
+
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--couleur-green);
+}
+
+.connexion {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0em 4em 0 4em;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.text {
+  flex-direction: column;
+}
+
+.nom-util,
+.mdp,
+.connect {
+  display: block;
+  margin: 1em 0;
+}
+
+.connect {
+  color: var(--couleur-lightcyan);
+  font-family: var(--fontfamily-poppins);
+}
+
+.nom-util,
+.mdp {
+  width: 400px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+.iden {
+  color: var(--couleur-green);
+}
+
+.section-connect > * {
+  margin: 1em 0;
+}
+.section-inscription > * {
+  margin: 1em 0;
+}
+
+.section-connect {
+  grid-row: 1/2;
+}
+
+.section-inscription {
+  grid-row: 2/3;
+}
+
+.section-identif {
+  margin: 2em 0;
+  justify-content: center;
+
+  grid-row: 3/4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect,
+.inscription {
+  font-size: 1rem;
+  display: block;
+  width: 400px;
+  transition: all 300ms ease-in-out;
+
+}
+
+.inscription {
+  background-color: var(--couleur-darkgreen);
+}
+
+h2 {
+  color: var(--couleur-darkgreen);
+}
+
+.image {
+  background-image: url("../../images/connexion.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 80vh;
+}
+
+.iden {
+  margin-left: 0.5em;
+}
+.fa-eye-slash {
+  display: none;
+}
+
+.red{
+  color: red;
+}
+
+a:hover{
+  color: var(--couleur-darkgreen);
+}
+
+.connect:hover{
+  background-color: var(--couleur-darkgreen);
+}

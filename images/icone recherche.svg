@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170.165" height="170.165" viewBox="0 0 170.165 170.165">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #000038;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(-875.188 -455)">
+    <rect id="Boundary" class="cls-1" width="170.165" height="170.165" transform="translate(875.188 455)"/>
+    <path id="_Color" data-name=" ↳Color" class="cls-2" d="M116.879,127.742h0l-36.486-36.4V85.576l-1.971-2.042a47.5,47.5,0,1,1,5.112-5.112l2.042,1.971H91.34l36.408,36.479-10.862,10.869ZM47.551,14.71A32.835,32.835,0,1,0,80.385,47.544,32.835,32.835,0,0,0,47.551,14.71Z" transform="translate(896.334 476.153)"/>
+  </g>
+</svg>
