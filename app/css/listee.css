@@ -1,0 +1,140 @@
+:root {
+  --couleur-darkgreen: #4d7368;
+  --couleur-lightcyan: #d9e5e1;
+  --couleur-darkblue: #000038;
+  --couleur-green: #8fbf78;
+  --couleur-white: white;
+  --couleur-black: black;
+
+  --fontfamily-poppins: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--couleur-lightcyan);
+}
+.flex {
+  display: flex;
+}
+.btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background-color: var(--couleur-green);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.marg {
+  margin: 0 5em;
+}
+.inp {
+  height: 36.6px;
+  width: 200px;
+  border: none;
+  padding: 0 1em;
+  font-family: var(--fontfamily-poppins);
+}
+
+html {
+  font-family: var(--fontfamily-poppins);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--couleur-lightcyan);
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--couleur-green);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-template-rows: 10vh 10vh 80vh;
+}
+
+.sec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+header {
+  height: 15vh;
+  padding: 2rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.liens a + a {
+  margin-left: 1em;
+}
+
+.dark {
+  color: var(--couleur-darkblue);
+}
+
+
+.recherche {
+  border: none;
+  color: var(--couleur-lightcyan);
+  font-size: 1.1rem;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-self: center; 
+}
+
+.rechercher {
+  border: none;
+  border-radius: 0 0;
+  color: var(--couleur-lightcyan);
+  background-color: var(--couleur-darkgreen);
+  font-size: 1.1rem;
+  height: 36.6px;
+}
+
+form > * {
+  margin-right: 0.5rem;
+}
+
+.card-img {
+  width: 8em;
+}
+
+.card {
+  text-align: center;
+  min-width: 250px;
+  height: max-content;
+  padding: 1em;
+  border: 2px solid var(--couleur-darkblue);
+  border-radius: 10px;
+}
+
+.infos {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.none{
+  display: none;
+}
+
+.main-inscription {
+  text-align: center;
+  background-color: var(--couleur-lightcyan);
+  color: var(--couleur-darkblue);
+}

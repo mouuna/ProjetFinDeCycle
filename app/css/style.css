@@ -1,0 +1,262 @@
+:root {
+  --couleur-darkgreen: #4d7368;
+  --couleur-lightcyan: #d9e5e1;
+  --couleur-darkblue: #000038;
+  --couleur-green: #8fbf78;
+  --couleur-white: white;
+  --couleur-black: black;
+
+  --fontfamily-poppins: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--couleur-lightcyan);
+}
+.flex {
+  display: flex;
+}
+.btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background-color: var(--couleur-green);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.inp {
+  height: 36.6px;
+  width: 200px;
+  border: none;
+  padding: 0 1em;
+  font-family: var(--fontfamily-poppins);
+}
+
+html {
+  font-family: var(--fontfamily-poppins);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--couleur-lightcyan);
+}
+
+.image-de-fond {
+  background: url("../../images/accuiel illustration.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.fond-vert {
+  background: url("../../images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  z-index: -2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10vh 90vh 60vh 100vh 15vh;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+header {
+  padding: 2rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.liens a + a {
+  margin-left: 1em;
+}
+
+.sec-grid {
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  grid-row: 1/2;
+}
+
+.title {
+  color: var(--couleur-white);
+  font-size: 1.2rem;
+}
+
+.sp {
+  color: var(--couleur-darkblue);
+  font-size: 2rem;
+}
+
+.recherche {
+  justify-content: center;
+}
+
+.recherche > * {
+  margin-right: 0.5em;
+}
+
+.rechercher {
+  border: none;
+  border-radius: 0 20px 20px 0;
+  color: var(--couleur-lightcyan);
+  font-size: 1.1rem;
+  transition: all 200ms ease-in-out;
+}
+
+.nom {
+  width: 300px;
+  border-radius: 20px 0 0 20px;
+}
+
+.th-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.stetho {
+  grid-column: 1/2;
+}
+
+.img {
+  height: 90vh;
+}
+
+.secondary {
+  align-items: center;
+
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+.med {
+  width: 50%;
+}
+
+.medecin-invit {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  grid-column: 2/3;
+}
+.medecin-invit > * {
+  margin-bottom: 2rem;
+}
+
+.rejoindre {
+  width: 200px;
+  background-color: var(--couleur-darkblue);
+  font-weight: 500;
+}
+
+footer {
+  background-color: var(--couleur-black);
+  justify-content: space-between;
+  align-items: center;
+
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+.all-r-r {
+  color: var(--couleur-lightcyan);
+  margin-right: 4rem;
+}
+
+.foot {
+  flex-direction: column;
+  margin-left: 4em;
+}
+
+.main-inscription {
+  text-align: center;
+  background-color: var(--couleur-lightcyan);
+  color: var(--couleur-darkblue);
+  transition: all 200ms ease-in-out;
+}
+
+.info {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+.info > * {
+  flex: 1 1 33%;
+}
+
+.card-title {
+  color: var(--couleur-darkblue);
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.card-text {
+  color: var(--couleur-darkgreen);
+  max-width: 220px;
+}
+
+.card {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icone {
+  width: 100px;
+  margin-bottom: 2em;
+}
+
+.rechercher:hover{
+  background-color: var(--couleur-darkgreen);
+}
+
+.main-connexion{
+  transition: all 200ms ease-in-out;
+}
+
+.main-connexion:hover{
+  background-color: var(--couleur-darkgreen);
+}
+
+.main-inscription:hover{
+  background-color: var(--couleur-darkgreen);
+  color: var(--couleur-lightcyan);
+}
